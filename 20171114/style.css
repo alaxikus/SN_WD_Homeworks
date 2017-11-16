@@ -1,0 +1,92 @@
+
+#container {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#divlogo {
+    height: auto;
+    width: 200px;
+    background-color: white;
+    margin: 0 auto;
+    position: static;
+}
+
+.logo {
+    width: 200px;
+}
+
+
+#divtitle {
+    width: 450px;
+    margin: auto;
+}
+
+h1 {
+    font-family: "helvetica neue";
+    font-color: #6D5F5C;
+    font-size: 32px;
+    font-weight: 200;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    top: -50px;
+}
+
+h2 {
+    font-family: "helvetica neue";
+    font-color: #6D5F5C;
+    font-size: 16px;
+    font-weight: 200;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    top: -50px;
+}
+
+
+#divloginbox {
+    background-color: lightgrey;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.divloginpic {
+    width: 100px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+#divcreateaccount {
+}
+
+#input {
+    width: 80%;
+    margin: 10px 30px;
+    display: inline-block;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.button {
+    width: 86%;
+    margin: 0px 30px;
+    display: block;
+    background-color: #306dd1;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    font-color: #6fcfcfc;
+}
+
+#question {
+    display: block;
+    text-align: right;
+    margin: 0 auto 0 0;
+}
+
+#divfooter {
+}
+
