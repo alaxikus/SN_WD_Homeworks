@@ -1,0 +1,147 @@
+.navbar {
+      background-color: black;
+      border-radius: 0px;
+      border: 0px;
+      display: block;
+    }
+
+#myCarousel {
+    width: auto;
+    height: auto;
+}
+
+h1 {
+    font-family: "Times New Roman";
+    font-size: 25px;
+    color: grey;
+    font-weight: 200;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    color: black;
+}
+
+h4 {
+    font-family: "helvetica neue";
+    color: #6D5F5C;
+    font-size: 28px;
+    font-weight: 200;
+    text-align: center;
+}
+
+h5 {
+    font-family: "helvetica neue";
+    color: #6D5F5C;
+    font-size: 18px;
+    font-weight: 200;
+    text-align: center;
+}
+
+h6 {
+    font-family: "helvetica neue";
+    color: white;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+h7 {
+    font-family: "helvetica neue";
+    color: white;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.img-circle {
+    opacity: 0.5;
+    width: 300px;
+    height: 300px;
+    margin-top: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: center;
+}
+
+.img-circle:hover {
+   opacity: 1;
+   transition: .5s ease;
+}
+
+#text {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-top: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 5px;
+    border-bottom: 2px #2B9F64 solid;
+    border-top: 2px #2B9F64 solid;
+}
+
+.container-fluid1 {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container_footer {
+     background-color: black;
+     color: white;
+     margin-top: 10px;
+     padding: 20px;
+     height: 150px;
+     width: 100%;
+     float: left;
+}
+
+.img-rounded {
+     height: 150px;
+     width: 150px;
+     float: left;
+     padding: 10px;
+}
+
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
