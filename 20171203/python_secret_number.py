@@ -7,7 +7,7 @@ while True:
         break
     else:
         print "Your answer is incorrect."
-        print "Try again? Type y or n"
+        guess = raw_input("Try again? Type y or n: ")
         if guess == "y":
             print guess
         if guess == "n":
