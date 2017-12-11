@@ -28,11 +28,6 @@ while True:
 
         menu[dish] = price
 
-        new = raw_input("Do you want to enter another dish or show menu? Please enter y/n: ")
-
-        if new.lower() == "n":
-            break
-
     elif user_input.lower() == "s":
         for k, v in menu.items():
             print k, v
