@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title> {% block title %} {% endblock title %}</title>
+    <!-- Bootstrap CSS -->
+    <!--<link rel="stylesheet" type="text/css" href="Bootstrap/bootstrap.css">-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- JavaScript files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="Bootstrap/bootstrap.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+      <style>
+
+    .accordion1 {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: 2px black solid;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    margin-bottom: 5px;
+}
+
+    .accordion1.active, button.accordion1:hover {
+    background-color: #2B9F64;
+}
+
+
+    input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+}
+
+    input[type=submit] {
+        background-color: white;
+        color: black;
+        padding: 12px 20px;
+        border: 2px #2B9F64 solid;
+        border-radius: 4px;
+        cursor: pointer;
+}
+
+    input[type=submit]:hover {
+        background-color: #2B9F64;
+}
+
+    .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        width: 45%;
+        float: left;
+        margin-left: 40px;
+}
+
+
+  </style>
+
+
+
+    <script>
+    function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+    function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+    </script>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">homeiswhereyourcrazyheartis</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">.home</a></li>
+        <li><a href="https://smartninjaprojectalexandra.appspot.com/hello">.servus</a></li>
+        <li><a href="https://smartninjaprojectalexandra.appspot.com/blog">.reisespaß</a></li>
+        <li><a href="https://smartninjaprojectalexandra.appspot.com/myprojects">.fotogalerie</a></li>
+        <li><a href="https://smartninjaprojectalexandra.appspot.com/contact">.kontakt</a></li>
+          <li><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></li>
+      </ul>
+    </div>
+
+    <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="https://smartninjaprojectalexandra.appspot.com/">home</a>
+    <a href="https://smartninjaprojectalexandra.appspot.com/hello">servus</a>
+    <a href="https://smartninjaprojectalexandra.appspot.com/blog">reisespaß</a>
+    <a href="https://smartninjaprojectalexandra.appspot.com/myprojects">fotogalerie</a>
+    <a href="https://smartninjaprojectalexandra.appspot.com/contact">kontakt</a>
+  </div>
+</div>
+
+</nav>
+</body>
+
+    {% block page_content%} {% endblock page_content %}
+
+</html>

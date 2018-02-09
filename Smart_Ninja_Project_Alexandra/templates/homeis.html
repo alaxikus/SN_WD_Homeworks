@@ -1,0 +1,244 @@
+{% extends "frame.html" %}
+
+{% block title %} Homeiswhereyourcrazyheartis {% endblock title %}
+
+{% block page_content %}
+
+    <h1>Homeiswhereyourcrazyheartis</h1>
+
+<body>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="/img/header1.jpg" alt="In der Natur">
+          <div class="carousel-caption">
+          <h2>In der Natur</h2>
+            <p>Kärnten</p>
+      </div></div>
+
+      <div class="item">
+        <img src="/img/header2.jpg" alt="Im Nebel">
+          <div class="carousel-caption">
+          <h2>Im Nebel</h2>
+            <p>Myanmar</p>
+      </div></div>
+
+      <div class="item">
+        <img src="/img/header3.jpg" alt="In den Bergen">
+          <div class="carousel-caption">
+          <h2>In den Bergen</h2>
+             <p>Neuseeland</p>
+    </div></div>
+ </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<h3>Meine letzten Fotografien</h3>
+    <div class="container-fluid1">
+    <img src="/img/article1.jpg" alt="Wiese" class="img-circle" class="img-responsive">
+    <img src="/img/article2.jpg" alt="Wald" class="img-circle" class="img-responsive">
+    <img src="/img/article3.jpg" alt="Halm" class="img-circle" class="img-responsive">
+    <img src="/img/article4.jpg" alt="See" class="img-circle" class="img-responsive">
+</div>
+
+<div id="text">
+    <h4>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</h4>
+</div>
+
+<div class="row">
+    <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="/img/Island1.jpg" alt="Island1">
+      <div class="caption">
+        <h3>Jökulsárlón</h3>
+          <h5>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, Lorem ipsum dolor sit amet, consetetur sadipscing elitr,Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+          <br>Mehr zum Thema <a href="#">Gletscherseen</a>
+          </h5>
+          <h6>Aug 2017</h6>
+      </div>
+    </div>
+  </div>
+
+    <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="/img/Island2.jpg" alt="Island2">
+      <div class="caption">
+        <h3>Borgarfjörður</h3>
+          <h5>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, Lorem ipsum dolor sit amet, consetetur sadipscing elitr,Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+          <br>Mehr zum Thema <a href="#">Wandern in Island</a></h5>
+          <h6>Aug 2017</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="/img/Island3.jpg" alt="Island3">
+      <div class="caption">
+        <h3>Fjaðrárgljúfur</h3>
+          <h5>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, Lorem ipsum dolor sit amet, consetetur sadipscing elitr,Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+          <br>Mehr zum Thema <a href="#">Schluchten</a></h5>
+          <h6>Aug 2017</h6>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <form action="/action_page.php">
+  <h3>Schreib' mir was</h3>
+    <label for="fname">Vorname</label>
+    <input type="text" id="fname" name="firstname" placeholder="Dein Vorname..">
+
+    <label for="lname">Nachname</label>
+    <input type="text" id="lname" name="lastname" placeholder="Dein Nachname..">
+
+    <label for="country">Land</label>
+    <select id="country" name="country">
+      <option value="oesterreich">Österreich</option>
+      <option value="deutschland">Deutschland</option>
+      <option value="schweiz">Schweiz</option>
+    </select>
+
+    <label for="subject">Worum geht's?</label>
+    <textarea id="subject" name="subject" placeholder="Tipp mir was.." style="height:115px"></textarea>
+
+    <input type="submit" value="Los geht's" formaction="mailto:kochal@gmx.at">
+
+  </form>
+</div>
+
+<div class="container">
+  <h2>FAQ</h2>
+
+<div id="accordion" role="tablist">
+  <div class="card">
+    <div class="card-header" role="tab" id="headingOne">
+      <h5 class="mb-0">
+        <a data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            <button class="accordion1">Welche Länder habe ich schon bereist?</button>
+        </a>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab" id="headingTwo">
+      <h5 class="mb-0">
+        <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          <button class="accordion1">Wann und wo fotografiere ich am Liebsten?</button>
+        </a>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab" id="headingThree">
+      <h5 class="mb-0">
+        <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          <button class="accordion1">Welche Länder stehen noch auf meiner Bucket List?</button>
+        </a>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+      <div class="card-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+        </p>
+      </div>
+    </div>
+  </div>
+
+ <div class="card">
+    <div class="card-header" role="tab" id="headingFour">
+      <h5 class="mb-0">
+        <a class="collapsed" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          <button class="accordion1">Was ist mir beim Fotografieren besonders wichtig?</button>
+        </a>
+      </h5>
+    </div>
+    <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion">
+      <div class="card-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+        </p>
+      </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header" role="tab" id="headingFive">
+      <h5 class="mb-0">
+        <a class="collapsed" data-toggle="collapse" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          <button class="accordion1">Worauf sollte man beim Reisen achten?</button>
+        </a>
+      </h5>
+    </div>
+    <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive" data-parent="#accordion">
+      <div class="card-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+        </p>
+      </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header" role="tab" id="headingSix">
+      <h5 class="mb-0">
+        <a class="collapsed" data-toggle="collapse" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+          <button class="accordion1">Welche Fotos mag ich am Liebsten?</button>
+        </a>
+      </h5>
+    </div>
+    <div id="collapseSix" class="collapse" role="tabpanel" aria-labelledby="headingSix" data-parent="#accordion">
+      <div class="card-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+        </p>
+      </div>
+    </div>
+</div>
+
+
+</div>
+</div>
+
+<div class="container_footer">
+<h6>Kontakt</h6>
+    <img src="/img/Ich.png" alt="Ich" class="img-rounded">
+    <h7>Äläxikus Kokerska<br>
+        Mail: <a href="mailto:kochal@gmx.at">kochal@gmx.at</a><br>
+        Tel.: 0660 000 000 000</h7>
+
+    </div>
+
+</body>
+
+{% endblock page_content %}
+

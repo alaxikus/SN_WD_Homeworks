@@ -1,0 +1,34 @@
+
+{% extends "frame.html" %}
+
+{% block title %} Blog - Around the World {% endblock title %}
+
+{% block page_content %}
+
+    <h1>Blog - Around the World</h1>
+
+<form method="post">
+    <div class="input-group">
+        <span class="input-group-addon">Name</span>
+        <input type="text" placeholder="name" name="name">
+    </div>
+
+        <div class="input-group">
+        <span class="input-group-addon">Message</span>
+        <input type="text" placeholder="message" name="message_text">
+    </div>
+    <button type="submit">Submit</button>
+</form>
+
+{% for message in messages %}
+
+<div class="panel panel-primary">
+  <div class="panel-heading"> {{ message.name }} </div>
+  <div class="panel-body">
+    {{ message.message_text }}
+  </div>
+</div>
+
+{% endfor %}
+
+{% endblock page_content %}
